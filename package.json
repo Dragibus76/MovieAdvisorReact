@@ -1,7 +1,10 @@
 {
-  "name": "movie-series-app",
+  "name": "movieadvisorreact",
   "version": "0.1.0",
-  "private": true,
+  "engines": {
+    "node": "6.11.1"},
+
+  "private": false,
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
