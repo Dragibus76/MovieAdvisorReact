@@ -4,7 +4,6 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { img_300, noPicture } from "../../config/config";
 import "./Carousel.css";
-
 const handleDragStart = (e) => e.preventDefault();
 
 const Gallery = ({ id, media_type }) => {
@@ -40,7 +39,6 @@ const Gallery = ({ id, media_type }) => {
     );
     setCredits(data.cast);
   };
-
   useEffect(() => {
     fetchCredits();
     // eslint-disable-next-line

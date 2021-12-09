@@ -4,11 +4,12 @@ import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import TvIcon from "@material-ui/icons/Tv";
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import InfoIcon from '@mui/icons-material/Info';
 import MovieIcon from "@material-ui/icons/Movie";
 import SearchIcon from "@material-ui/icons/Search";
 import WhatshotIcon from "@material-ui/icons/Whatshot";
 import { useHistory } from "react-router-dom";
+import HomeIcon from '@mui/icons-material/Home';
+import LoginIcon from '@mui/icons-material/Login';
 import "../components/mainNav.css"
 const useStyles = makeStyles({
   root: {
@@ -28,16 +29,18 @@ export default function SimpleBottomNavigation() {
 
   useEffect(() => {
     if (value === 0) {
-      history.push("/");
+      history.push("/Home");
     } else if (value === 1) {
-      history.push("/Films");
+      history.push("/Tendance");
     } else if (value === 2) {
-      history.push("/Series");
+      history.push("/Films");
     } else if (value === 3) {
-      history.push("/Rechercher");
+      history.push("/Series");
     } else if (value === 4) {
-      history.push("/a propos");
-    }
+      history.push("/Rechercher");
+    } else if (value === 5) {
+      history.push("/Connexion");
+    } 
   }, [value, history]);
 
   return (
@@ -55,6 +58,11 @@ export default function SimpleBottomNavigation() {
     >
       <BottomNavigationAction
         style={{ color: "#54DECE" }}
+        label="Accueil"
+        icon={<HomeIcon />}
+      />
+      <BottomNavigationAction
+        style={{ color: "#54DECE" }}
         label="Tendance"
         icon={<WhatshotIcon />}
       />
@@ -68,17 +76,18 @@ export default function SimpleBottomNavigation() {
         label="Series"
         icon={<TvIcon />}
       />
-      <BottomNavigationAction
+       <BottomNavigationAction
         style={{ color: "#54DECE" }}
         label="Rechercher"
         icon={<SearchIcon />}
       />
-       <BottomNavigationAction
+      <BottomNavigationAction
         style={{ color: "#54DECE" }}
-        label="a propos"
-        icon={<InfoIcon />}
+        label="Connexion"
+        icon={<LoginIcon />}
       />
     </BottomNavigation>
+   
     <BottomNavigationAction />
     <div>
       <p>Développer avec <FavoriteIcon className="coeur" /> par </p>

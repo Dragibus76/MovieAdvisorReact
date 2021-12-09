@@ -31,7 +31,7 @@ const Movies = () => {
 
   return (
     <div>
-      <span className="pageTitle">Découverte des films</span>
+      <span className="pageTitle">Films à Découvrir</span>
       <Genres
         type="movie"
         selectedGenres={selectedGenres}

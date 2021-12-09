@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import TextareaAutosize from '@mui/material/TextareaAutosize';
 import Modal from "@material-ui/core/Modal";
-import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import axios from "axios";
