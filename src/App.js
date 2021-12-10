@@ -11,6 +11,7 @@ import Apropos from "./Pages/Apropos/Apropos";
 import Watchlist from "./Pages/Watchlist/Watchlist";
 import Navbar from "./components/NavBar/NavBar";
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import UnstyledButtonCustom from "./components/ButtonVersion/ButtonVersion";
 
 
 
@@ -37,6 +38,7 @@ function App() {
       <div className="footer">
       <p>Développer avec <FavoriteIcon className="coeur" /> par </p>
       <img src="https://zupimages.net/up/21/49/d21v.png" className="logo_sign"></img>
+      <UnstyledButtonCustom className="Buttonversion"/>
     </div>
       
     </BrowserRouter>

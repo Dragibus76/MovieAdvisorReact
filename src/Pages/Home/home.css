@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+
+
+.Home_title,
+.Home_subtitle{
+    text-align: center;
+    font-family: 'Outfit', sans-serif!important;
+}
+
+.Boxes_Home{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+.card{
+    background: transparent!important;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #54DECE!important;
+    transition: 0.6s ease;
+}
+.card:hover{
+    background: white!important;
+    transform: scale(1.2);
+    
+}
+
+.Home_Icon{
+    color: #54DECE;
+    margin: auto;
+    width: 5em;
+}
