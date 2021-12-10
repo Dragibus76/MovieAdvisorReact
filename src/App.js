@@ -34,8 +34,9 @@ function App() {
           </Switch>
         </Container>
       </div>
-      <SimpleBottomNavigation />
       <SimpleBottomNavigation2 />
+      <SimpleBottomNavigation />
+      
     </BrowserRouter>
   );
 }

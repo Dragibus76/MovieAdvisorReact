@@ -14,6 +14,7 @@ const useStyles = makeStyles({
     bottom: 0,
     backgroundColor: "#051724",
     zIndex: 100,
+    marginLeft:-70,
   },
   
 });
@@ -25,12 +26,15 @@ export default function SimpleBottomNavigation2() {
 
   useEffect(() => {
     if (value === 0) {
-      history.push("/Apropos");
+      history.push("/");
     } else if (value === 1) {
-      history.push("/Watchlist");
+      history.push("/Apropos");
     } else if (value === 2) {
-      history.push("/Connexion");
+      history.push("/Watchlist");
     } 
+    else if (value === 3) {
+        history.push("/Connexion");
+      } 
   }, [value, history]);
 
   return (
@@ -47,6 +51,10 @@ export default function SimpleBottomNavigation2() {
       className={classes.root}
     >
       <BottomNavigationAction
+       
+        
+      />
+       <BottomNavigationAction
         style={{ color: "#54DECE" }}
         label="Apropos"
         icon={<MenuBookIcon />}
