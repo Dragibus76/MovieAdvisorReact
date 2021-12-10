@@ -1,7 +1,5 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
-import SimpleBottomNavigation from "./components/MainNav";
-import SimpleBottomNavigation2 from "./components/MainNav2";
 import Movies from "./Pages/Movies/Movies";
 import Series from "./Pages/Series/Series";
 import Trending from "./Pages/Trending/Trending";
@@ -11,6 +9,8 @@ import { Container } from "@material-ui/core";
 import Connexion from "./components/Connexion";
 import Apropos from "./Pages/Apropos/Apropos";
 import Watchlist from "./Pages/Watchlist/Watchlist";
+import Navbar from "./components/NavBar/NavBar";
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
 
 
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <BrowserRouter>
-     
+     <Navbar/>
       <div className="app">
         <Container>
         
@@ -34,8 +34,10 @@ function App() {
           </Switch>
         </Container>
       </div>
-      <SimpleBottomNavigation2 />
-      <SimpleBottomNavigation />
+      <div className="footer">
+      <p>Développer avec <FavoriteIcon className="coeur" /> par </p>
+      <img src="https://zupimages.net/up/21/49/d21v.png" className="logo_sign"></img>
+    </div>
       
     </BrowserRouter>
   );

@@ -13,6 +13,7 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
  overflow: visible;
+ background: #051724;
 
 }
 
@@ -112,4 +113,17 @@ color: #54DECE!important;}
 .logoMa{
   width: 40px;
   margin: 20px;
+}
+.footer{
+  background: #051724;
+  text-align: center;
+  color: white;
+}
+
+.logo_sign{
+  width: 120px;
+}
+
+.coeur{
+  color: red;
 }
