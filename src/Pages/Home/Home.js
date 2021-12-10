@@ -5,11 +5,12 @@ import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
 import ForumIcon from '@mui/icons-material/Forum';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import "./home.css"
+import UnstyledButtonCustom from '../../components/ContactButton/ContactButton';
 const Home = () => {
     return (
          <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="true">
+      <Container maxWidth="true" className='container_home'>
         <h1 className='Home_title'>MovieAdvisor</h1>
         <h2 className='Home_subtitle'>Votre avis tout simplement</h2>
         <p>What is Lorem Ipsum?
@@ -21,16 +22,34 @@ passages, and more recently with desktop publishing software like Aldus PageMake
         <div className='Boxes_Home'>
             <div className='card'>
                 <LocalFireDepartmentIcon className='Home_Icon' fontSize='large'/>
+                    <h4>Rapide</h4>
             </div>
+            
             <div className='card'>
-            <ForumIcon className='Home_Icon' fontSize='large'/>
+                <ForumIcon className='Home_Icon' fontSize='large'/>
+                    <h4>Social</h4>
             </div>
+
             <div className='card'>
-            <ThumbUpIcon className='Home_Icon' fontSize='large'/>
+                <ThumbUpIcon className='Home_Icon' fontSize='large'/>
+                    <h4>Like</h4>
             </div>
         </div>
         </Container>
-
+        <p>What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap 
+into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
+passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <div className="Contact_Button">
+            <UnstyledButtonCustom />
+        </div>
+        
+        <p>What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap 
+into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
+passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
       </Container>
     </React.Fragment>
     );
