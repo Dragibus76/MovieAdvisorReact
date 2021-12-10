@@ -12,6 +12,8 @@ import Watchlist from "./Pages/Watchlist/Watchlist";
 import Navbar from "./components/NavBar/NavBar";
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import UnstyledButtonCustom from "./components/ButtonVersion/ButtonVersion";
+import Login from "./Pages/Login/Login";
+
 
 
 
@@ -29,7 +31,7 @@ function App() {
             <Route path="/Films" component={Movies} />
             <Route path="/Series" component={Series} />
             <Route path="/Rechercher" component={Search} />
-            <Route path="/Connexion" component={Connexion} />
+            <Route path="/Connexion" component={Login} />
             <Route path="/Apropos" component={Apropos} />
             <Route path="/Watchlist" component={Watchlist} />
           </Switch>

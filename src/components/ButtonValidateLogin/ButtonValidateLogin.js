@@ -2,15 +2,16 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import ButtonUnstyled, { buttonUnstyledClasses } from '@mui/base/ButtonUnstyled';
 import { styled } from '@mui/system';
+import LoginIcon from '@mui/icons-material/Login';
 
 const ButtonRoot = React.forwardRef(function ButtonRoot(props, ref) {
   const { children, ...other } = props;
 
   return (
-    <svg width="40" height="40" {...other} ref={ref}>
-      <polygon points="0,30 0,0 30,0 30,30" className="bg" />
-      <polygon points="0,30 0,0 30,0 30,30" className="borderEffect" />
-      <foreignObject x="0" y="0" width="30" height="30">
+    <svg width="150" height="50" {...other} ref={ref}>
+      <polygon points="0,50 0,0 150,0 150,50" className="bg" />
+      <polygon points="0,50 0,0 150,0 150,50" className="borderEffect" />
+      <foreignObject x="0" y="0" width="150" height="50">
         <div className="content">{children}</div>
       </foreignObject>
     </svg>
@@ -26,7 +27,7 @@ const CustomButtonRoot = styled(ButtonRoot)(
   overflow: visible;
   cursor: pointer;
   --main-color: ${
-    theme.palette.mode === 'light' ? 'rgb(84, 222, 206)' : 'rgb(144,202,249)'
+    theme.palette.mode === 'light' ? 'rgb(84, 222, 206)' : 'rgb(84, 222, 206)'
   };
   --hover-color: ${
     theme.palette.mode === 'light'
@@ -55,8 +56,8 @@ const CustomButtonRoot = styled(ButtonRoot)(
   & .borderEffect {
     stroke: var(--main-color);
     stroke-width: 2;
-    stroke-dasharray: 50 600;
-    stroke-dashoffset: 50;
+    stroke-dasharray: 150 600;
+    stroke-dashoffset: 150;
     fill: transparent;
   }
 
@@ -88,7 +89,7 @@ const CustomButtonRoot = styled(ButtonRoot)(
 
     & .content {
       font-family: Helvetica, Inter, Arial, sans-serif;
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 200;
       height: 100%;
       display: flex;
@@ -109,5 +110,5 @@ const SvgButton = React.forwardRef(function SvgButton(props, ref) {
 });
 
 export default function UnstyledButtonCustom() {
-  return <SvgButton>V.1.3</SvgButton>;
+  return <SvgButton><LoginIcon/> Connexion</SvgButton>;
 }

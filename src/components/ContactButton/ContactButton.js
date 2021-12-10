@@ -25,11 +25,9 @@ ButtonRoot.propTypes = {
 const CustomButtonRoot = styled(ButtonRoot)(
   ({ theme }) => `
   overflow: visible;
- align-items:center;
-
   cursor: pointer;
   --main-color: ${
-    theme.palette.mode === 'light' ? 'rgb(25,118,210)' : 'rgb(144,202,249)'
+    theme.palette.mode === 'light' ? 'rgb(84, 222, 206)' : 'rgb(84, 222, 206)'
   };
   --hover-color: ${
     theme.palette.mode === 'light'

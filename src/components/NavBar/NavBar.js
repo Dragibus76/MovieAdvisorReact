@@ -55,7 +55,7 @@ const Navbar = () => {
   return (
   <nav className="navbar navbar-expand-lg navbar-mainbg">
     
-      <NavLink className="navbar-brand navbar-logo" to="/" exact>
+      <NavLink className="navbar-brand navbar-logo" to="/Home" exact>
         <img src='https://zupimages.net/up/21/49/qeog.png' className='logo'></img>
       </NavLink>
     
