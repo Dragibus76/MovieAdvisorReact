@@ -12,6 +12,7 @@ i {
   margin-right: 10px;
 }
 .navbar-logo {
+  margin: 10px;
   padding: 15px;
   color: #fff;
   pointer-events: none;
@@ -103,6 +104,7 @@ i {
 }
 .logo{
   width: 40px;
+  margin: 10px;
 }
 .logo_navbar{
   color: #54DECE;

@@ -27,6 +27,7 @@
 .card:hover{
     background: white!important;
     transform: scale(1.2);
+    color: #54DECE;
     
 }
 

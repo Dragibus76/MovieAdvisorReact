@@ -1,10 +1,11 @@
 import React from 'react';
-const Watchlist = () => {
+
+const Card = () => {
     return (
         <div>
-            fdgd
+            wl
         </div>
     );
 };
 
-export default Watchlist;
+export default Card;

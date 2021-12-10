@@ -28,7 +28,9 @@
   border-radius: 50px;
   color: white;
 }
-
+.PrivateTabIndicator {
+  background-color: red!important;
+}
 @media (max-width: 1000px) {
   .pageTitle {
     font-size: 6.4vw;
